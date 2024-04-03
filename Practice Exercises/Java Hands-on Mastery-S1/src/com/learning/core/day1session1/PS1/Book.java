@@ -1,4 +1,4 @@
-package com.learning.core.day1session1;
+package com.learning.core.day1session1.PS1;
 
 public class Book {
 

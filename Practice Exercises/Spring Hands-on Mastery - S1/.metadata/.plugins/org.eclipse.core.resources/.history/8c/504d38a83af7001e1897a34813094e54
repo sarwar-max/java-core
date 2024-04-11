@@ -1,0 +1,26 @@
+package com.OnlineShoppingApp;
+
+public class Disc extends Product {
+	private int capacity;
+
+	public Disc(int productId, String productName, double price, int capacity, double discount) {
+		super(productId, productName, price, discount);
+		this.capacity = capacity;
+	}
+
+	@Override
+	public String toString() {
+		return "Disc [productId=" + getProductId() + ", productName=" + getProductName() + ", price=" + getPrice()
+				+ ", capacity=" + capacity + ", discount=" + getDiscount() + "]";
+	}
+
+	// Getters and setters
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+}

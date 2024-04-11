@@ -1,0 +1,25 @@
+package com.OnlineShoppingApp;
+
+public class Product {
+	private int productId;
+	private String productName;
+	private double price;
+	private double discount;
+
+	// Constructor with discount injection
+	public Product(int productId, String productName, double price, double discount) {
+		this.productId = productId;
+		this.productName = productName;
+		this.price = price;
+		this.discount = discount;
+	}
+
+	// Getters and setters
+	// ...
+
+	@Override
+	public String toString() {
+		return "Product [productId=" + productId + ", productName=" + productName + ", price=" + price + ", discount="
+				+ discount + "]";
+	}
+}

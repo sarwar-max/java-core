@@ -1,0 +1,13 @@
+INDEX VERSION 1.134+D:\Desktop_Stuff\Practice Exercises\Spring Hands-on Mastery - S1\.metadata\.plugins\org.eclipse.jdt.core
+3473155147.index
+3798727371.index
+874006887.index
+1300996604.index
+1364521021.index
+199728714.index
+633587924.index
+3752586541.index
+1865797976.index
+926555144.index
+3201055942.index
+2596512852.index

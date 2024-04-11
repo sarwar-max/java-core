@@ -1,0 +1,50 @@
+package com.OnlineShoppingApp;
+
+public class Cart {
+
+	private String cartId;
+	private String items;
+	
+	private Product product;
+	
+		
+	public Cart(String cartId, String items, Product product) {
+		super();
+		this.cartId = cartId;
+		this.items = items;
+		this.product = product;
+	}
+
+
+	public Product getProduct() {
+		return product;
+	}
+
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+
+	public String getCartId() {
+		return cartId;
+	}
+	public void setCartId(String cartId) {
+		this.cartId = cartId;
+	}
+	public String getItems() {
+		return items;
+	}
+	public void setItems(String items) {
+		this.items = items;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Cart [cartId=" + cartId + ", items=" + items + ", product=" + product + "]";
+	}
+	
+	
+	
+}

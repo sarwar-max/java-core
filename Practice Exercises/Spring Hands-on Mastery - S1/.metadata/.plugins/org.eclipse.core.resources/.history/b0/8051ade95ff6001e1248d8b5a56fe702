@@ -1,0 +1,6 @@
+package com.OnlineShoppingApp;
+
+public class Disc extends Product {
+
+	private int capacity;
+}

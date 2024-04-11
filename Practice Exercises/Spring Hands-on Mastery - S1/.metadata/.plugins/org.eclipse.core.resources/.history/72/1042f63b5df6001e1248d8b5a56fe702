@@ -1,0 +1,46 @@
+package com.mphasis.shop.shoppingApp;
+
+import java.util.List;
+
+public class Product {
+	private int prodId;
+	private String prodName;
+	private List<String> prodBrand;
+
+	public Product(int prodId, String prodName, List<String> prodBrand) {
+		super();
+		this.prodId = prodId;
+		this.prodName = prodName;
+		this.prodBrand = prodBrand;
+	}
+
+	public int getProdId() {
+		return prodId;
+	}
+
+	public void setProdId(int prodId) {
+		this.prodId = prodId;
+	}
+
+	public String getProdName() {
+		return prodName;
+	}
+
+	public void setProdName(String prodName) {
+		this.prodName = prodName;
+	}
+
+	public List<String> getProdBrand() {
+		return prodBrand;
+	}
+
+	public void setProdBrand(List<String> prodBrand) {
+		this.prodBrand = prodBrand;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [prodId=" + prodId + ", prodName=" + prodName + ", prodBrand=" + prodBrand + "]";
+	}
+
+}

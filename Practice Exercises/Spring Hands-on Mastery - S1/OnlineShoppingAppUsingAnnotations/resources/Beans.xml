@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Configure PropertyPlaceholderConfigurer to load properties file -->
+	<context:property-placeholder
+		location="classpath:discounts.properties" />
+
+	<!-- Define ShoppingCart bean with prototype scope -->
+	<bean id="shoppingCart" class="com.OnlineShoppingApp.ShoppingCart"
+		scope="prototype" />
+
+	<!-- Define Cashier bean with initialization and destruction methods -->
+	<bean id="cashier" class="com.OnlineShoppingApp.Cashier"
+		init-method="openFile" destroy-method="closeFile">
+		<property name="fileName" value="checkout_log" />
+		<property name="path" value="checkout_logs" />
+	</bean>
+
+	<!-- Define Battery bean with constructor injection -->
+	<bean id="battery" class="com.OnlineShoppingApp.Battery">
+		<constructor-arg value="1" type="int" />
+		<constructor-arg value="Battery" />
+		<constructor-arg value="10.0" type="double" />
+		<constructor-arg value="true" type="boolean" />
+		<constructor-arg value="${specialcustomer.discount}"
+			type="double" />
+	</bean>
+
+	<!-- Define Disc bean with constructor injection -->
+	<bean id="disc" class="com.OnlineShoppingApp.Disc">
+		<constructor-arg value="2" type="int" />
+		<constructor-arg value="Disc" />
+		<constructor-arg value="5.0" type="double" />
+		<constructor-arg value="700" type="int" />
+		<constructor-arg value="${summer.discount}"
+			type="double" />
+	</bean>
+
+</beans>

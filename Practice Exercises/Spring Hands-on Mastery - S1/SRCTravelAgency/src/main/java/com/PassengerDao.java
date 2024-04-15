@@ -4,13 +4,13 @@ import java.util.List;
 
 public interface PassengerDao {
 
-	Passenger getPassengerById(int id);
+	PassengerDetails getPassengerById(int id);
 
-	List<Passenger> getAllPassengers();
+	List<PassengerDetails> getAllPassengers();
 
-	void addPassenger(Passenger passenger);
+	void addPassenger(PassengerDetails passenger);
 
-	void updatePassenger(Passenger passenger);
+	void updatePassenger(PassengerDetails passenger);
 
 	void deletePassenger(int id);
 }

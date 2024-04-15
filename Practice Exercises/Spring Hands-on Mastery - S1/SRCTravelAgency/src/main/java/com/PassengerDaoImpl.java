@@ -15,26 +15,26 @@ public class PassengerDaoImpl implements PassengerDao {
 	private JdbcTemplate jdbcTemplate;
 
 	@Override
-	public Passenger getPassengerById(int id) {
+	public PassengerDetails getPassengerById(int id) {
 		String sql = "SELECT * FROM Passenger_Details WHERE Passenger_id = ?";
 		return jdbcTemplate.queryForObject(sql, new Object[] { id }, new PassengerRowMapper());
 	}
 
 	@Override
-	public List<Passenger> getAllPassengers() {
+	public List<PassengerDetails> getAllPassengers() {
 		String sql = "SELECT * FROM Passenger_Details";
 		return jdbcTemplate.query(sql, new PassengerRowMapper());
 	}
 
 	@Override
-	public void addPassenger(Passenger passenger) {
+	public void addPassenger(PassengerDetails passenger) {
 		String sql = "INSERT INTO Passenger_Details (Passenger_id, Passenger_name, Passenger_dob, Passenger_phone, Passenger_email) VALUES (?, ?, ?, ?, ?)";
 		jdbcTemplate.update(sql, passenger.getPassengerId(), passenger.getPassengerName(), passenger.getPassengerDob(),
 				passenger.getPassengerPhone(), passenger.getPassengerEmail());
 	}
 
 	@Override
-	public void updatePassenger(Passenger passenger) {
+	public void updatePassenger(PassengerDetails passenger) {
 		String sql = "UPDATE Passenger_Details SET Passenger_name = ?, Passenger_dob = ?, Passenger_phone = ?, Passenger_email = ? WHERE Passenger_id = ?";
 		jdbcTemplate.update(sql, passenger.getPassengerName(), passenger.getPassengerDob(),
 				passenger.getPassengerPhone(), passenger.getPassengerEmail(), passenger.getPassengerId());
@@ -46,10 +46,10 @@ public class PassengerDaoImpl implements PassengerDao {
 		jdbcTemplate.update(sql, id);
 	}
 
-	private static class PassengerRowMapper implements RowMapper<Passenger> {
+	private static class PassengerRowMapper implements RowMapper<PassengerDetails> {
 		@Override
-		public Passenger mapRow(ResultSet rs, int rowNum) throws SQLException {
-			Passenger passenger = new Passenger();
+		public PassengerDetails mapRow(ResultSet rs, int rowNum) throws SQLException {
+			PassengerDetails passenger = new PassengerDetails();
 			passenger.setPassengerId(rs.getInt("Passenger_id"));
 			passenger.setPassengerName(rs.getString("Passenger_name"));
 			passenger.setPassengerDob(rs.getDate("Passenger_dob").toLocalDate());

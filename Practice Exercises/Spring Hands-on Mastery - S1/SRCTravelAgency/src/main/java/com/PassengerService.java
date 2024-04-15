@@ -17,22 +17,22 @@ public class PassengerService {
 	}
 
 	@Transactional
-	public void createPassenger(Passenger passenger) {
+	public void createPassenger(PassengerDetails passenger) {
 		passengerDao.addPassenger(passenger);
 	}
 
 	@Transactional(readOnly = true)
-	public Passenger getPassengerById(int passengerId) {
+	public PassengerDetails getPassengerById(int passengerId) {
 		return passengerDao.getPassengerById(passengerId);
 	}
 
 	@Transactional(readOnly = true)
-	public List<Passenger> getAllPassengers() {
+	public List<PassengerDetails> getAllPassengers() {
 		return passengerDao.getAllPassengers();
 	}
 
 	@Transactional
-	public void updatePassenger(Passenger passenger) {
+	public void updatePassenger(PassengerDetails passenger) {
 		passengerDao.updatePassenger(passenger);
 	}
 

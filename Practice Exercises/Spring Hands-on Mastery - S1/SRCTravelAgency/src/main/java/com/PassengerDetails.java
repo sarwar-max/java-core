@@ -2,7 +2,7 @@ package com;
 
 import java.time.LocalDate;
 
-public class Passenger {
+public class PassengerDetails {
 
 	private int passengerId;
 	private String passengerName;
@@ -10,11 +10,11 @@ public class Passenger {
 	private String passengerPhone;
 	private String passengerEmail;
 
-	public Passenger() {
+	public PassengerDetails() {
 		// Default constructor
 	}
 
-	public Passenger(int passengerId, String passengerName, LocalDate passengerDob, String passengerPhone,
+	public PassengerDetails(int passengerId, String passengerName, LocalDate passengerDob, String passengerPhone,
 			String passengerEmail) {
 		this.passengerId = passengerId;
 		this.passengerName = passengerName;

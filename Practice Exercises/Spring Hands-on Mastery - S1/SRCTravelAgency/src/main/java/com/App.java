@@ -11,12 +11,16 @@ public class App {
 		PassengerService passengerService = context.getBean(PassengerService.class);
 
 		// Test CRUD operations
-		Passenger newPassenger = new Passenger(1239, "John Doe", LocalDate.of(1995, 8, 20), "9876543210",
+		PassengerDetails newPassenger = new PassengerDetails(1239, "John Doe", LocalDate.of(1995, 8, 20), "9876543210",
 				"john.doe@example.com");
 
 		passengerService.createPassenger(newPassenger);
 
-		Passenger fetchedPassenger = passengerService.getPassengerById(1239);
+		//
+		passengerService.createPassenger(new PassengerDetails(1240, "Md Gulam Sarwar", LocalDate.of(1997, 12, 15),
+				"8910652432", "sarwar@gmail.com"));
+
+		PassengerDetails fetchedPassenger = passengerService.getPassengerById(1239);
 		System.out.println("Fetched Passenger: " + fetchedPassenger);
 
 		fetchedPassenger.setPassengerName("Jane Doe");

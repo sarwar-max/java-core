@@ -1,1 +1,2 @@
 Thu Apr 11 16:29:47 IST 2024	[Battery [productId=1, productName=AAA Battery, price=4.5, rechargeable=true, discount=0.1], Disc [productId=2, productName=DVD Disc, price=8.5, capacity=700, discount=0.15]]
+Sun Apr 14 10:59:47 IST 2024	[Battery [productId=1, productName=AAA Battery, price=4.5, rechargeable=true, discount=0.1], Disc [productId=2, productName=DVD Disc, price=8.5, capacity=700, discount=0.15]]

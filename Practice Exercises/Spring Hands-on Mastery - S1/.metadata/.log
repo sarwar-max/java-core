@@ -1598,3 +1598,283 @@ END
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-04-11 09:26:04.739
 !MESSAGE Started org.springframework.tooling.boot.ls LS process 14636
+!SESSION 2024-04-14 10:55:29.250 -----------------------------------------------
+eclipse.buildId=4.19.1.202308011926
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-14 10:55:30.484
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-04-14 10:56:48.975
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-04-14 10:56:48.975
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-04-14 10:56:58.234
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\STS4\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+E:\STS4\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;E:\STS4\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\STS4\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Desktop_Stuff/java-core/Practice Exercises/Spring Hands-on Mastery - S1/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1713072418233
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:56:58.235
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-04-14 10:56:58.356
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7968
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-14 10:57:04.085
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Sarwar'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:57:04.925
+!MESSAGE Boot project ADDED: OnlineShoppingApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:57:04.926
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:57:04.927
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:57:04.950
+!MESSAGE Boot project ADDED: OnlineShoppingAppDiscounts
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:57:04.951
+!MESSAGE Boot project ADDED: OnlineShoppingAppViaConstructor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:58:46.590
+!MESSAGE Classpath changed for project: OnlineShoppingAppCashier
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:58:52.116
+!MESSAGE Classpath changed for project: OnlineShoppingAppCashier
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:58:52.116
+!MESSAGE Boot project ADDED: OnlineShoppingAppCashier
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:58:53.747
+!MESSAGE Classpath changed for project: OnlineShoppingAppCashier
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:59:25.948
+!MESSAGE Classpath changed for project: OnlineShoppingAppLogging
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 10:59:25.949
+!MESSAGE Boot project ADDED: OnlineShoppingAppLogging
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 11:00:59.058
+!MESSAGE Classpath changed for project: OnlineShoppingAppShoppingCart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 11:00:59.068
+!MESSAGE Boot project ADDED: OnlineShoppingAppShoppingCart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 11:01:42.176
+!MESSAGE Classpath changed for project: OnlineShoppingAppUsingAnnotations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-14 11:01:42.213
+!MESSAGE Boot project ADDED: OnlineShoppingAppUsingAnnotations
+!SESSION 2024-04-15 10:07:46.058 -----------------------------------------------
+eclipse.buildId=4.19.1.202308011926
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-15 10:07:53.845
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-15 10:09:03.741
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2024-04-15 10:09:59.285
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-04-15 10:09:59.285
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-04-15 10:10:31.468
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\STS4\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+E:\STS4\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;E:\STS4\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\STS4\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Desktop_Stuff/java-core/Practice Exercises/Spring Hands-on Mastery - S1/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1713156031467
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:31.514
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-04-15 10:10:31.638
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10428
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-15 10:10:38.268
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Sarwar'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.783
+!MESSAGE Boot project ADDED: OnlineShoppingApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.783
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.785
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.785
+!MESSAGE Boot project ADDED: OnlineShoppingAppCashier
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.785
+!MESSAGE Boot project ADDED: OnlineShoppingAppDiscounts
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.786
+!MESSAGE Boot project ADDED: OnlineShoppingAppLogging
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.786
+!MESSAGE Boot project ADDED: OnlineShoppingAppShoppingCart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.787
+!MESSAGE Boot project ADDED: OnlineShoppingAppUsingAnnotations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:10:39.787
+!MESSAGE Boot project ADDED: OnlineShoppingAppViaConstructor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:53:11.417
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.eclipse.jface 2 0 2024-04-15 10:53:26.593
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-04-15 10:53:26.593
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:54:39.857
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:54:39.897
+!MESSAGE Boot project ADDED: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:56:26.693
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:56:26.796
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:56:28.855
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:59:00.273
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:59:00.321
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 10:59:02.034
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-04-15 11:13:15.496
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 11:22:22.373
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 11:23:33.352
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 11:23:33.502
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 11:24:00.197
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 11:25:10.255
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 11:25:10.311
+!MESSAGE Classpath changed for project: SRCTravelAgency
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-04-15 11:25:26.318
+!MESSAGE Classpath changed for project: SRCTravelAgency

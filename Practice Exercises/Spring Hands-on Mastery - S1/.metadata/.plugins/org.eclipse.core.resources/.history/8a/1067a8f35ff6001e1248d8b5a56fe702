@@ -1,5 +1,0 @@
-package com.OnlineShoppingApp;
-
-public class Battery extends Product {
-
-}

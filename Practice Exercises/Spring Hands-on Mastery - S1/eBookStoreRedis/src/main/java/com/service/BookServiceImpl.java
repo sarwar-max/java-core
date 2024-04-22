@@ -1,0 +1,62 @@
+package com.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.model.Book;
+import com.repository.BookRepository;
+
+@Service("bookServiceImpl")
+@Scope("singleton")
+@Transactional
+public class BookServiceImpl implements BookService {
+
+	@Autowired
+	@Qualifier("bookRepository")
+	private BookRepository bookRepository;
+
+	@Override
+	public Book addBook(Book book) {
+		return bookRepository.save(book);
+	}
+
+	@Override
+	public Book updateBook(Book book) {
+		return bookRepository.save(book);
+	}
+
+	@Override
+	public List<Book> findAllBooks() {
+		return (List<Book>) bookRepository.findAll();
+	}
+
+	@Override
+	public Book findByBookId(String id) {
+		return bookRepository.findById(id).orElse(null);
+	}
+
+	@Override
+	public void deleteBookById(String id) {
+		bookRepository.deleteById(id);
+	}
+
+	@Override
+	public List<Book> findByBookTitle(String bookTitle) {
+		return bookRepository.findByBookTitle(bookTitle);
+	}
+
+	@Override
+	public List<Book> findByBookPublisher(String bookPublisher) {
+		return bookRepository.findByBookPublisher(bookPublisher);
+	}
+
+	@Override
+	public List<Book> findByBookYear(int bookYear) {
+		return bookRepository.findByBookYear(bookYear);
+	}
+}
